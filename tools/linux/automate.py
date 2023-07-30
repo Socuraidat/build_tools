@@ -29,6 +29,8 @@ def install_qt():
     print("#### CANT UNZIP")
 
   qt_params = ["-opensource",
+	       "-no-pch",
+               "-include", "limits",
                "-confirm-license",
                "-release",
                "-shared",
