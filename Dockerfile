@@ -10,7 +10,7 @@ RUN apt-get -y update && \
 ADD . /build_tools
 WORKDIR /build_tools
 
-COPY ./qt-everywhere-opensource-src-5.9.9.tar.xz /build_tools/tools/linux/qt_source_5.9.9.tar.xz
+COPY ./qt-everywhere-src-5.14.2.tar.xz /build_tools/tools/linux/qt_source_5.14.2.tar.xz
 
 CMD cd tools/linux && \
     python3 ./automate.py
