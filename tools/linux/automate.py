@@ -45,7 +45,6 @@ def install_qt():
                "-gstreamer", "1.0",
                "-nomake", "examples",
                "-nomake", "tests",
-               "-skip", "qtenginio",
                "-skip", "qtlocation",
                "-skip", "qtserialport",
                "-skip", "qtsensors",
