@@ -11,5 +11,7 @@ RUN rm /usr/bin/python && ln -s /usr/bin/python2 /usr/bin/python
 ADD . /build_tools
 WORKDIR /build_tools
 
+COPY /tmp/qt-everywhere-opensource-src-5.9.9.tar.xz /build_tools/tools/linux/qt_source_5.9.9.tar.xz
+
 CMD cd tools/linux && \
     python3 ./automate.py
